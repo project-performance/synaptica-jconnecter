@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://synaptica.factiva.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://synaptica.factiva.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://synaptica.factiva.com/">
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Logout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SessionKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogoutResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListTaskViews70">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListTaskViews70Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListTaskViews70Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListTaskViews">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListTaskViewsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListTaskViewsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportTerms71">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="tvpid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AppendOrReplaceCategories" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AppendOrReplaceRelationships" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ImportXML">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportTerms71Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportTerms71Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportTerms70">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="tvpid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ImportXML">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportTerms70Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportTerms70Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportTerms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tvpid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ImportXML" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportTermsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportTermsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportVocabulary70">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="ReportParameters">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportVocabulary70Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportVocabulary70Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportVocabulary">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReportParameters" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExportVocabularyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExportVocabularyResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListVocabularies70">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="tvpid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListVocabularies70Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListVocabularies70Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListVocabularies">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tvpid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListVocabulariesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListVocabulariesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateTerms70">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="Terms">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateTerms70Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateTerms70Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateTerms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Terms" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateTermsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateTermsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListRelatedTerms70">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="Term">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListRelatedTerms70Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListRelatedTerms70Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListRelatedTerms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Term" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListRelatedTermsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListRelatedTermsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSavedReport70">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="FileRequested" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSavedReport70Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSavedReport70Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTerms70">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchParameters">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchTerms70Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SearchTerms70Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateNumericExtendedAttribute72">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ControlData">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateParameters">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateNumericExtendedAttribute72Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateNumericExtendedAttribute72Result">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="LogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListTaskViews70SoapIn">
+    <wsdl:part name="parameters" element="tns:ListTaskViews70" />
+  </wsdl:message>
+  <wsdl:message name="ListTaskViews70SoapOut">
+    <wsdl:part name="parameters" element="tns:ListTaskViews70Response" />
+  </wsdl:message>
+  <wsdl:message name="ListTaskViewsSoapIn">
+    <wsdl:part name="parameters" element="tns:ListTaskViews" />
+  </wsdl:message>
+  <wsdl:message name="ListTaskViewsSoapOut">
+    <wsdl:part name="parameters" element="tns:ListTaskViewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportTerms71SoapIn">
+    <wsdl:part name="parameters" element="tns:ImportTerms71" />
+  </wsdl:message>
+  <wsdl:message name="ImportTerms71SoapOut">
+    <wsdl:part name="parameters" element="tns:ImportTerms71Response" />
+  </wsdl:message>
+  <wsdl:message name="ImportTerms70SoapIn">
+    <wsdl:part name="parameters" element="tns:ImportTerms70" />
+  </wsdl:message>
+  <wsdl:message name="ImportTerms70SoapOut">
+    <wsdl:part name="parameters" element="tns:ImportTerms70Response" />
+  </wsdl:message>
+  <wsdl:message name="ImportTermsSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportTerms" />
+  </wsdl:message>
+  <wsdl:message name="ImportTermsSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportTermsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExportVocabulary70SoapIn">
+    <wsdl:part name="parameters" element="tns:ExportVocabulary70" />
+  </wsdl:message>
+  <wsdl:message name="ExportVocabulary70SoapOut">
+    <wsdl:part name="parameters" element="tns:ExportVocabulary70Response" />
+  </wsdl:message>
+  <wsdl:message name="ExportVocabularySoapIn">
+    <wsdl:part name="parameters" element="tns:ExportVocabulary" />
+  </wsdl:message>
+  <wsdl:message name="ExportVocabularySoapOut">
+    <wsdl:part name="parameters" element="tns:ExportVocabularyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListVocabularies70SoapIn">
+    <wsdl:part name="parameters" element="tns:ListVocabularies70" />
+  </wsdl:message>
+  <wsdl:message name="ListVocabularies70SoapOut">
+    <wsdl:part name="parameters" element="tns:ListVocabularies70Response" />
+  </wsdl:message>
+  <wsdl:message name="ListVocabulariesSoapIn">
+    <wsdl:part name="parameters" element="tns:ListVocabularies" />
+  </wsdl:message>
+  <wsdl:message name="ListVocabulariesSoapOut">
+    <wsdl:part name="parameters" element="tns:ListVocabulariesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateTerms70SoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateTerms70" />
+  </wsdl:message>
+  <wsdl:message name="ValidateTerms70SoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateTerms70Response" />
+  </wsdl:message>
+  <wsdl:message name="ValidateTermsSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateTerms" />
+  </wsdl:message>
+  <wsdl:message name="ValidateTermsSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateTermsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListRelatedTerms70SoapIn">
+    <wsdl:part name="parameters" element="tns:ListRelatedTerms70" />
+  </wsdl:message>
+  <wsdl:message name="ListRelatedTerms70SoapOut">
+    <wsdl:part name="parameters" element="tns:ListRelatedTerms70Response" />
+  </wsdl:message>
+  <wsdl:message name="ListRelatedTermsSoapIn">
+    <wsdl:part name="parameters" element="tns:ListRelatedTerms" />
+  </wsdl:message>
+  <wsdl:message name="ListRelatedTermsSoapOut">
+    <wsdl:part name="parameters" element="tns:ListRelatedTermsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSavedReport70SoapIn">
+    <wsdl:part name="parameters" element="tns:GetSavedReport70" />
+  </wsdl:message>
+  <wsdl:message name="GetSavedReport70SoapOut">
+    <wsdl:part name="parameters" element="tns:GetSavedReport70Response" />
+  </wsdl:message>
+  <wsdl:message name="SearchTerms70SoapIn">
+    <wsdl:part name="parameters" element="tns:SearchTerms70" />
+  </wsdl:message>
+  <wsdl:message name="SearchTerms70SoapOut">
+    <wsdl:part name="parameters" element="tns:SearchTerms70Response" />
+  </wsdl:message>
+  <wsdl:message name="UpdateNumericExtendedAttribute72SoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateNumericExtendedAttribute72" />
+  </wsdl:message>
+  <wsdl:message name="UpdateNumericExtendedAttribute72SoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateNumericExtendedAttribute72Response" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input message="tns:LogoutSoapIn" />
+      <wsdl:output message="tns:LogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListTaskViews70">
+      <wsdl:input message="tns:ListTaskViews70SoapIn" />
+      <wsdl:output message="tns:ListTaskViews70SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListTaskViews">
+      <wsdl:input message="tns:ListTaskViewsSoapIn" />
+      <wsdl:output message="tns:ListTaskViewsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportTerms71">
+      <wsdl:input message="tns:ImportTerms71SoapIn" />
+      <wsdl:output message="tns:ImportTerms71SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportTerms70">
+      <wsdl:input message="tns:ImportTerms70SoapIn" />
+      <wsdl:output message="tns:ImportTerms70SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportTerms">
+      <wsdl:input message="tns:ImportTermsSoapIn" />
+      <wsdl:output message="tns:ImportTermsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportVocabulary70">
+      <wsdl:input message="tns:ExportVocabulary70SoapIn" />
+      <wsdl:output message="tns:ExportVocabulary70SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportVocabulary">
+      <wsdl:input message="tns:ExportVocabularySoapIn" />
+      <wsdl:output message="tns:ExportVocabularySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListVocabularies70">
+      <wsdl:input message="tns:ListVocabularies70SoapIn" />
+      <wsdl:output message="tns:ListVocabularies70SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListVocabularies">
+      <wsdl:input message="tns:ListVocabulariesSoapIn" />
+      <wsdl:output message="tns:ListVocabulariesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTerms70">
+      <wsdl:input message="tns:ValidateTerms70SoapIn" />
+      <wsdl:output message="tns:ValidateTerms70SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTerms">
+      <wsdl:input message="tns:ValidateTermsSoapIn" />
+      <wsdl:output message="tns:ValidateTermsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListRelatedTerms70">
+      <wsdl:input message="tns:ListRelatedTerms70SoapIn" />
+      <wsdl:output message="tns:ListRelatedTerms70SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListRelatedTerms">
+      <wsdl:input message="tns:ListRelatedTermsSoapIn" />
+      <wsdl:output message="tns:ListRelatedTermsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSavedReport70">
+      <wsdl:input message="tns:GetSavedReport70SoapIn" />
+      <wsdl:output message="tns:GetSavedReport70SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTerms70">
+      <wsdl:input message="tns:SearchTerms70SoapIn" />
+      <wsdl:output message="tns:SearchTerms70SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNumericExtendedAttribute72">
+      <wsdl:input message="tns:UpdateNumericExtendedAttribute72SoapIn" />
+      <wsdl:output message="tns:UpdateNumericExtendedAttribute72SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://synaptica.factiva.com/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://synaptica.factiva.com/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListTaskViews70">
+      <soap:operation soapAction="http://synaptica.factiva.com/ListTaskViews70" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListTaskViews">
+      <soap:operation soapAction="http://synaptica.factiva.com/ListTaskViews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportTerms71">
+      <soap:operation soapAction="http://synaptica.factiva.com/ImportTerms71" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportTerms70">
+      <soap:operation soapAction="http://synaptica.factiva.com/ImportTerms70" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportTerms">
+      <soap:operation soapAction="http://synaptica.factiva.com/ImportTerms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportVocabulary70">
+      <soap:operation soapAction="http://synaptica.factiva.com/ExportVocabulary70" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportVocabulary">
+      <soap:operation soapAction="http://synaptica.factiva.com/ExportVocabulary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListVocabularies70">
+      <soap:operation soapAction="http://synaptica.factiva.com/ListVocabularies70" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListVocabularies">
+      <soap:operation soapAction="http://synaptica.factiva.com/ListVocabularies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTerms70">
+      <soap:operation soapAction="http://synaptica.factiva.com/ValidateTerms70" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTerms">
+      <soap:operation soapAction="http://synaptica.factiva.com/ValidateTerms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRelatedTerms70">
+      <soap:operation soapAction="http://synaptica.factiva.com/ListRelatedTerms70" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRelatedTerms">
+      <soap:operation soapAction="http://synaptica.factiva.com/ListRelatedTerms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSavedReport70">
+      <soap:operation soapAction="http://synaptica.factiva.com/GetSavedReport70" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTerms70">
+      <soap:operation soapAction="http://synaptica.factiva.com/SearchTerms70" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNumericExtendedAttribute72">
+      <soap:operation soapAction="http://synaptica.factiva.com/UpdateNumericExtendedAttribute72" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://synaptica.factiva.com/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap12:operation soapAction="http://synaptica.factiva.com/Logout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListTaskViews70">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ListTaskViews70" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListTaskViews">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ListTaskViews" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportTerms71">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ImportTerms71" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportTerms70">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ImportTerms70" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportTerms">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ImportTerms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportVocabulary70">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ExportVocabulary70" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportVocabulary">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ExportVocabulary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListVocabularies70">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ListVocabularies70" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListVocabularies">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ListVocabularies" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTerms70">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ValidateTerms70" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateTerms">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ValidateTerms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRelatedTerms70">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ListRelatedTerms70" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRelatedTerms">
+      <soap12:operation soapAction="http://synaptica.factiva.com/ListRelatedTerms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSavedReport70">
+      <soap12:operation soapAction="http://synaptica.factiva.com/GetSavedReport70" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTerms70">
+      <soap12:operation soapAction="http://synaptica.factiva.com/SearchTerms70" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNumericExtendedAttribute72">
+      <soap12:operation soapAction="http://synaptica.factiva.com/UpdateNumericExtendedAttribute72" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://synaptica.net/ppcws/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://synaptica.net/ppcws/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
