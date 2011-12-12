@@ -35,7 +35,7 @@ public class SynapticaJConnecter {
         
         //ListTaskViews70Result result = listTaskViews70();
         System.out.println(loginResult.toXML());
-        System.out.println("test");
+        System.out.println("test"); 
         HashMap<String,String> returnVal = loginResult.toNodeResultMap();
         
         
